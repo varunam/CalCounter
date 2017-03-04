@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="#7f96ea"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="app.calcounterapplication.com.calcounter.foodItemDetails">
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/deleteFood"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/delete"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/varun"
+        android:layout_centerHorizontal="true"
+        android:layout_width="180dp"
+        android:layout_height="180dp" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_below="@+id/logo"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/detsFoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dlad"
+            android:textSize="20sp"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/detsCaloriesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories: "
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/detsCaloriesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:textStyle="bold"
+            android:text="200"/>
+
+        <TextView
+            android:id="@+id/detsDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consumed on.."
+            android:textSize="14sp"
+            android:layout_marginTop="14dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/detsShare"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:background="@drawable/share" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

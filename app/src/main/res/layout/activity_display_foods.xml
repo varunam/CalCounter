@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#49659c"
+    tools:context="app.calcounterapplication.com.calcounter.DisplayFoodsActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:background="#ffee"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/totalAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0a0a09"
+            android:textStyle="bold"
+            android:paddingRight="10dp"
+            android:text="@string/food_total_text"/>
+
+        <TextView
+            android:text="|"
+            android:textColor="#080505"
+            android:textSize="23sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/totalItemsTextView"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:text="@string/food_items_num"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="|"
+            android:textColor="#080505"
+            android:paddingLeft="10dp"
+            android:textSize="23sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/addItem"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/add"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_below="@+id/LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="#0e0e0e"
+        android:dividerHeight="2sp">
+
+    </ListView>
+</RelativeLayout>

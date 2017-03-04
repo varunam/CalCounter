@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_height="180dp"
+    android:layout_marginTop="10dp"
+    android:padding="12dp"
+    android:background="@drawable/whitebackground">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Name"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name"
+        android:text="Date Text"
+        android:layout_marginTop="6dp"
+        android:textStyle="italic"
+        />
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/dateText"
+        android:src="@drawable/varun"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/calories"
+        android:text="Calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/thumbnail"
+        android:layout_marginTop="10dp"
+        android:textColor="#a73939"/>
+
+    <TextView
+        android:id="@+id/calText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cal_text"
+        android:layout_alignBaseline="@+id/calories"
+        android:layout_toRightOf="@+id/calories"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/hasChild"
+        android:text=">"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
